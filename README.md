@@ -20,7 +20,7 @@ public Calendar<CalendarDay> MyCalendar { get; set; } = new Calendar<CalendarDay
 
 #### Add the following xmlns to your page or view
 ```xaml
-xmlns:xcViews="clr-namespace:XCalendar.Forms.Views;assembly=XCalendar.Forms"
+xmlns:xc="clr-namespace:XCalendar.Forms.Views;assembly=XCalendar.Forms"
 ```
 
 #### Bind to the properties of your Calendar
@@ -54,7 +54,7 @@ public Calendar<CalendarDay> MyCalendar { get; set; } = new Calendar<CalendarDay
 
 #### Add the following xmlns to your page or view
 ```xaml
-xmlns:xcViews="clr-namespace:XCalendar.Maui.Views;assembly=XCalendar.Maui"
+xmlns:xc="clr-namespace:XCalendar.Maui.Views;assembly=XCalendar.Maui"
 ```
 
 #### Bind to the properties of your Calendar
