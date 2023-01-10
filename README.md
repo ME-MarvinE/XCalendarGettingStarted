@@ -33,7 +33,6 @@ xmlns:xc="clr-namespace:XCalendar.Forms.Views;assembly=XCalendar.Forms"
     xmlns:xc="clr-namespace:XCalendar.Forms.Views;assembly=XCalendar.Forms">
     
         <xc:CalendarView
-            BackgroundColor="#404040"
             Days="{Binding MyCalendar.Days}"
             DaysOfWeek="{Binding MyCalendar.DayNamesOrder}"
             NavigatedDate="{Binding MyCalendar.NavigatedDate}"/>
@@ -65,8 +64,7 @@ xmlns:xc="clr-namespace:XCalendar.Maui.Views;assembly=XCalendar.Maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:xc="clr-namespace:XCalendar.Maui.Views;assembly=XCalendar.Maui">
     
-        <xc:CalendarView
-            BackgroundColor="#404040"
+        <xc:CalendarView>
             Days="{Binding MyCalendar.Days}"
             DaysOfWeek="{Binding MyCalendar.DayNamesOrder}"
             NavigatedDate="{Binding MyCalendar.NavigatedDate}"/>
