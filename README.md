@@ -64,7 +64,7 @@ xmlns:xc="clr-namespace:XCalendar.Maui.Views;assembly=XCalendar.Maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:xc="clr-namespace:XCalendar.Maui.Views;assembly=XCalendar.Maui">
     
-        <xc:CalendarView>
+        <xc:CalendarView
             Days="{Binding MyCalendar.Days}"
             DaysOfWeek="{Binding MyCalendar.DayNamesOrder}"
             NavigatedDate="{Binding MyCalendar.NavigatedDate}"/>
