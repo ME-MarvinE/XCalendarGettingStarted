@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Windows.Input;
+using XCalendar.Core.Extensions;
 using XCalendar.Core.Models;
 
 namespace MauiApp1
@@ -21,7 +22,23 @@ namespace MauiApp1
         }
         public void NavigateCalendar(int amount)
         {
-            MyCalendar.NavigateCalendar(amount);
+            //Months are variable length, calculate the timespan needed to get to the result.
+            DateTime targetDateTime = MyCalendar.NavigatedDate.AddMonths(amount);
+
+            MyCalendar.Navigate(targetDateTime - MyCalendar.NavigatedDate);
+
+            
+            //The below code additionaly handles the case that adding months leads to an unrepresentable date.
+
+            //if (MyCalendar.NavigatedDate.TryAddMonths(amount, out DateTime TargetDate))
+            //{
+            //    MyCalendar.Navigate(TargetDate - MyCalendar.NavigatedDate);
+            //}
+            //else
+            //{
+            //    //The calendar handles unrepresentable dates so just use the min or max bounds of TimeSpan depending on if we tried to add or subtract months.
+            //    MyCalendar.Navigate(amount > 0 ? TimeSpan.MaxValue : TimeSpan.MinValue);
+            //}
         }
     }
 }

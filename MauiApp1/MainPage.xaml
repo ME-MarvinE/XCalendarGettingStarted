@@ -11,12 +11,20 @@
         <xc:CalendarView
             BackgroundColor="#404040"
             BackwardsArrowCommand="{Binding NavigateCalendarCommand}"
-            BackwardsArrowCommandParameter="{Binding MyCalendar.BackwardsNavigationAmount}"
             Days="{Binding MyCalendar.Days}"
             DaysOfWeek="{Binding MyCalendar.DayNamesOrder}"
             ForwardsArrowCommand="{Binding NavigateCalendarCommand}"
-            ForwardsArrowCommandParameter="{Binding MyCalendar.ForwardsNavigationAmount}"
-            NavigatedDate="{Binding MyCalendar.NavigatedDate}"/>
+            NavigatedDate="{Binding MyCalendar.NavigatedDate}">
+            
+            <xc:CalendarView.ForwardsArrowCommandParameter>
+            <x:Int32>1</x:Int32>
+            </xc:CalendarView.ForwardsArrowCommandParameter>
+
+            <xc:CalendarView.BackwardsArrowCommandParameter>
+                <x:Int32>-1</x:Int32>
+            </xc:CalendarView.BackwardsArrowCommandParameter>
+
+        </xc:CalendarView>
 
         <!--  Below code is for a barebones calendar. Changed background colour to Grey so that text and arrows aren't invisible depending on device theme.  -->
         <!--<xc:CalendarView
