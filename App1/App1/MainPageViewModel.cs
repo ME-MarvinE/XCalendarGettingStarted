@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
+using XCalendar.Core.Extensions;
 using XCalendar.Core.Models;
 
 namespace App1
@@ -10,7 +9,6 @@ namespace App1
     internal class MainPageViewModel
     {
         public Calendar<CalendarDay> MyCalendar { get; set; } = new Calendar<CalendarDay>();
-
 
         //Below code is for making the calendar navigatable.
         public ICommand NavigateCalendarCommand { get; set; }
@@ -26,7 +24,7 @@ namespace App1
             MyCalendar.Navigate(targetDateTime - MyCalendar.NavigatedDate);
 
 
-            //The below code additionaly handles the case that adding months leads to an unrepresentable date.
+            //The below code additionally handles the case that adding months leads to an unrepresentable date.
 
             //if (MyCalendar.NavigatedDate.TryAddMonths(amount, out DateTime TargetDate))
             //{
