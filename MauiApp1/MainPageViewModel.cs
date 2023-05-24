@@ -4,10 +4,9 @@ using XCalendar.Core.Models;
 
 namespace MauiApp1
 {
-    internal class MainPageViewModel
+    public class MainPageViewModel
     {
         public Calendar<CalendarDay> MyCalendar { get; set; } = new Calendar<CalendarDay>();
-
         //Below code is for making the calendar navigatable.
         public ICommand NavigateCalendarCommand { get; set; }
         public MainPageViewModel()

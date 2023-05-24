@@ -6,7 +6,7 @@ using XCalendar.Core.Models;
 
 namespace App1
 {
-    internal class MainPageViewModel
+    public class MainPageViewModel
     {
         public Calendar<CalendarDay> MyCalendar { get; set; } = new Calendar<CalendarDay>();
 

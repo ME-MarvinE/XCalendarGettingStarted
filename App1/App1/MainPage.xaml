@@ -7,7 +7,7 @@
 
     <StackLayout>
 
-        <!--  Below code is for a navigatable calendar. Changed background colour to Grey so that text and arrows aren't invisible depending on device theme. -->
+        <!--  Below code is for a navigatable calendar. Changed background colour to Grey so that text and arrows aren't invisible depending on device theme.  -->
         <xc:CalendarView
             BackgroundColor="#404040"
             BackwardsArrowCommand="{Binding NavigateCalendarCommand}"
