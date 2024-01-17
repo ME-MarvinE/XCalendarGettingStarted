@@ -10,19 +10,19 @@
         <!--  Below code is for a navigatable calendar. Changed background colour to Grey so that text and arrows aren't invisible depending on device theme.  -->
         <xc:CalendarView
             BackgroundColor="#404040"
-            BackwardsArrowCommand="{Binding NavigateCalendarCommand}"
+            LeftArrowCommand="{Binding NavigateCalendarCommand}"
             Days="{Binding MyCalendar.Days}"
             DaysOfWeek="{Binding MyCalendar.DayNamesOrder}"
-            ForwardsArrowCommand="{Binding NavigateCalendarCommand}"
+            RightArrowCommand="{Binding NavigateCalendarCommand}"
             NavigatedDate="{Binding MyCalendar.NavigatedDate}">
 
-            <xc:CalendarView.ForwardsArrowCommandParameter>
+            <xc:CalendarView.RightArrowCommandParameter>
                 <x:Int32>1</x:Int32>
-            </xc:CalendarView.ForwardsArrowCommandParameter>
+            </xc:CalendarView.RightArrowCommandParameter>
 
-            <xc:CalendarView.BackwardsArrowCommandParameter>
+            <xc:CalendarView.LeftArrowCommandParameter>
                 <x:Int32>-1</x:Int32>
-            </xc:CalendarView.BackwardsArrowCommandParameter>
+            </xc:CalendarView.LeftArrowCommandParameter>
 
         </xc:CalendarView>
 
