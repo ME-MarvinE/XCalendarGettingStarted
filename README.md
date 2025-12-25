@@ -1,21 +1,22 @@
-# .NET
+# Basic Usage
+## .NET
 
 #### Install the NuGet package
-* https://www.nuget.org/packages/XCalendar.Core/
+* https://www.nuget.org/packages/XCalendar.Core [![NuGet](https://img.shields.io/nuget/v/XCalendar.Core.svg?label=NuGet)](https://www.nuget.org/packages/XCalendar.Core/)
 
 #### Now you can use the Calendar
 ```C#
 public Calendar<CalendarDay> MyCalendar { get; set; } = new Calendar<CalendarDay>();
 ```
 
-# Xamarin Forms
+## Xamarin Forms
 
 #### Install the NuGet package
-* https://www.nuget.org/packages/XCalendar.Forms/
+* https://www.nuget.org/packages/XCalendar.Forms [![NuGet](https://img.shields.io/nuget/v/XCalendar.Forms.svg?label=NuGet)](https://www.nuget.org/packages/XCalendar.Forms/)
 
 #### Create a Calendar in your ViewModel
 ```C#
-public Calendar<CalendarDay> MyCalendar { get; set; } = new Calendar<CalendarDay>();
+public Calendar MyCalendar { get; set; } = new Calendar();
 ```
 
 #### Add the following xmlns to your page or view
@@ -41,14 +42,19 @@ xmlns:xc="clr-namespace:XCalendar.Forms.Views;assembly=XCalendar.Forms"
 
 ```
 
-# .NET MAUI
+*Alternatively, these properties can be set directly from code-behind without the use of MVVM.*
+
+#### Youtube Tutorial (Outdated - Uses version 1.2.1 for Xamarin Forms)
+[![Beautiful, Extensive and FREE Calendar Control for Xamarin.Forms](https://img.youtube.com/vi/aw7b_Xt1fng/0.jpg)]([https://www.youtube.com/watch?v=bmkizbS4jb4](https://www.youtube.com/watch?v=aw7b_Xt1fng))
+
+## .NET MAUI
 
 #### Install the NuGet package
-* https://www.nuget.org/packages/XCalendar.Maui/
+* https://www.nuget.org/packages/XCalendar.Maui [![NuGet](https://img.shields.io/nuget/v/XCalendar.Maui.svg?label=NuGet)](https://www.nuget.org/packages/XCalendar.Maui/)
 
 #### Create a Calendar in your ViewModel
 ```C#
-public Calendar<CalendarDay> MyCalendar { get; set; } = new Calendar<CalendarDay>();
+public Calendar MyCalendar { get; set; } = new Calendar();
 ```
 
 #### Add the following xmlns to your page or view
@@ -71,3 +77,5 @@ xmlns:xc="clr-namespace:XCalendar.Maui.Views;assembly=XCalendar.Maui"
 
 </ContentPage>
 ```
+
+*Alternatively, these properties can be set directly from code-behind without the use of MVVM.*
