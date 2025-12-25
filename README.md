@@ -6,7 +6,7 @@
 
 #### Now you can use the Calendar
 ```C#
-public Calendar<CalendarDay> MyCalendar { get; set; } = new Calendar<CalendarDay>();
+public Calendar MyCalendar { get; set; } = new Calendar();
 ```
 
 ## Xamarin Forms
